@@ -1,46 +1,33 @@
-# membuat matriks menggunakan list
-print('-'*70)
-matriks_list = ([ 2,  1, -1],
-                [-3, -1,  2],
-                [-2,  1,  2])
+matriks_list = [
+    [2, 1, -1], 
+    [-3, -1, 2], 
+    [-2, 1, 2]
+]
 
-print ("ini adalah matriks dari list:")
-for list in matriks_list:
-    print(list)
+print("Matriks menggunakan list:")
+for new in matriks_list:
+    print(new)
+print('\n')
 
-print('-'*70)
-print("Elemen baris pertama kolom pertama dari matriks tersebut adalah : ",matriks_list[0][0])
-print("Elemen baris kedua   kolom pertama dari matriks tersebut adalah :", matriks_list[1][0])
-print("Elemen baris keriga  kolom pertama dari matriks tersebut adalah :", matriks_list[2][0])
-print('-'*70)
-print("Elemen baris pertama kolom kedua   dari matriks tersebut adalah : ",matriks_list[0][1])
-print("Elemen baris kedua   kolom kedua   dari matriks tersebut adalah :", matriks_list[1][1])
-print("Elemen baris ketiga  kolom kedua   dari matriks tersebut adalah : ",matriks_list[2][1])
-print('-'*70)
-print("Elemen baris kedua   kolom ketiga  dari matriks tersebut adalah : ",matriks_list[1][2])
-print("Elemen baris ketiga  kolom ketiga  dari matriks tersebut adalah : ",matriks_list[2][2])
-print("Elemen baris pertama kolom ketiga  dari matriks tersebut adalah :", matriks_list[0][2])
-print('-'*70)
+print("Indeksasi setiap elemen dalam matriks list:")
+for i in range(len(matriks_list)):
+    for j in range(len(matriks_list[i])):
+        print(f"Elemen pada baris {i+1}, kolom {j+1} adalah {matriks_list[i][j]}")
+print('\n')
 
 import numpy as np
-# Membuat matriks menggunakan Array
-matriks_array = ([[2, 1, -1], 
-                  [-3,-1, 2],
-                  [-2, 1, 2]])
-print("ini adalah matriks array")
-for array in matriks_array:
-    print(array)
 
-print('-'*70)
-print("Elemen baris pertama kolom pertama dari matriks tersebut adalah : ",matriks_array[0][0])
-print("Elemen baris kedua   kolom pertama dari matriks tersebut adalah :", matriks_array[1][0])
-print("Elemen baris keriga  kolom pertama dari matriks tersebut adalah :", matriks_array[2][0])
-print('-'*70)
-print("Elemen baris pertama kolom kedua   dari matriks tersebut adalah : ",matriks_array[0][1])
-print("Elemen baris kedua   kolom kedua   dari matriks tersebut adalah :", matriks_array[1][1])
-print("Elemen baris ketiga  kolom kedua   dari matriks tersebut adalah : ",matriks_array[2][1])
-print('-'*70)
-print("Elemen baris kedua   kolom ketiga  dari matriks tersebut adalah : ",matriks_array[1][2])
-print("Elemen baris ketiga  kolom ketiga  dari matriks tersebut adalah : ",matriks_array[2][2])
-print("Elemen baris pertama kolom ketiga  dari matriks tersebut adalah :", matriks_array[0][2])
-print('-'*70)
+matriks_array = np.array([
+    [2, 1, -1],
+    [-3, -1, 2],
+    [-2, 1, 2]
+])
+
+print("Matriks menggunakan numpy array:")
+print(matriks_array)
+print('\n')
+
+print("Indeksasi setiap elemen dalam matriks numpy array:")
+for i in range(matriks_array.shape[0]):
+    for j in range(matriks_array.shape[1]):
+        print(f"Elemen pada baris {i+1}, kolom {j+1} adalah {matriks_array[i,j]}")
