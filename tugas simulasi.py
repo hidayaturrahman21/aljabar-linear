@@ -1,33 +1,60 @@
-matriks_list = [
-    [2, 1, -1], 
-    [-3, -1, 2], 
-    [-2, 1, 2]
-]
+# membuat matriks menggunakan list
+print('-'*65)
+matriks_list = ([ 2,  1, -1],
+                [-3, -1,  2],
+                [-2,  1,  2])
 
-print("Matriks menggunakan list:")
-for new in matriks_list:
-    print(new)
-print('\n')
+print ("ini adalah matriks dari List:")
+for list in matriks_list:
+    print(list)
 
-print("Indeksasi setiap elemen dalam matriks list:")
-for i in range(len(matriks_list)):
-    for j in range(len(matriks_list[i])):
-        print(f"Elemen pada baris {i+1}, kolom {j+1} adalah {matriks_list[i][j]}")
-print('\n')
+print('-'*65)
+print("Elemen Baris Pertama Kolom Pertama dari Matriks List adalah : ",matriks_list[0][0])
+
+print("Elemen Baris Kedua   Kolom Pertama dari Matriks List adalah :", matriks_list[1][0])
+
+print("Elemen Baris Ketiga  Kolom Pertama dari Matriks List adalah :", matriks_list[2][0])
+
+print('-'*65)
+print("Elemen Baris Pertama Kolom Kedua   dari Matriks List adalah : ",matriks_list[0][1])
+
+print("Elemen Baris Kedua   Kolom Kedua   dari Matriks List adalah :", matriks_list[1][1])
+
+print("Elemen Baris Ketiga  Kolom Kedua   dari Matriks List adalah : ",matriks_list[2][1])
+
+print('-'*65)
+print("Elemen Baris Pertama Kolom Ketiga  dari Matriks List adalah :", matriks_list[0][2])
+
+print("Elemen Baris Kedua   Kolom Ketiga  dari Matriks List adalah : ",matriks_list[1][2])
+
+print("Elemen Baris Ketiga  Kolom Ketiga  dari Matriks List adalah : ",matriks_list[2][2])
+print('-'*65)
 
 import numpy as np
-
-matriks_array = np.array([
-    [2, 1, -1],
-    [-3, -1, 2],
-    [-2, 1, 2]
-])
-
-print("Matriks menggunakan numpy array:")
+# Membuat matriks menggunakan Array
+matriks_array = ([[2, 1, -1], 
+                  [-3,-1, 2],
+                  [-2, 1, 2]])
+print("ini adalah matriks dari Array:")
 print(matriks_array)
-print('\n')
 
-print("Indeksasi setiap elemen dalam matriks numpy array:")
-for i in range(matriks_array.shape[0]):
-    for j in range(matriks_array.shape[1]):
-        print(f"Elemen pada baris {i+1}, kolom {j+1} adalah {matriks_array[i,j]}")
+print("-"*65)
+print("Elemen Baris Pertama Kolom Pertama dari Matriks Array adalah : ",matriks_array[0][0])
+
+print("Elemen Baris Kedua   Kolom Pertama dari Matriks Array adalah :", matriks_array[1][0])
+
+print("Elemen Baris Ketiga  Kolom Pertama dari Matriks Array adalah :", matriks_array[2][0])
+print("-"*65)
+print("Elemen Baris Pertama Kolom Kedua   dari Matriks Array adalah : ",matriks_array[0][1])
+
+print("Elemen Baris Kedua   Kolom Kedua   dari Matriks Array adalah :", matriks_array[1][1])
+
+print("Elemen Baris Ketiga  Kolom Kedua   dari Matriks Array adalah : ",matriks_array[2][1])
+
+print("-"*65)
+print("Elemen Baris pertama Kolom Ketiga  dari Matriks Array adalah :", matriks_array[0][2])
+
+print("Elemen Baris Kedua   Kolom Ketiga  dari Matriks Array adalah : ",matriks_array[1][2])
+
+print("Elemen Baris Ketiga  Kolom Ketiga  dari Matriks Array adalah : ",matriks_array[2][2])
+print("-"*65)
