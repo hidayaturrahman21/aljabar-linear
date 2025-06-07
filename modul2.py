@@ -1,6 +1,5 @@
 import numpy as np
 
-# Matriks P dan Q
 P = np.array([
     [11, 12, 13],
     [14, 15, 16],
@@ -12,24 +11,15 @@ Q = np.array([
     [23, 24, 25],
     [26, 27, 28]
 ])
-
-# 1. Penjumlahan
 penjumlahan = P + Q
-
-# 2. Pengurangan
 pengurangan = P - Q
 
-# 3. Perkalian Dot (Matrix multiplication)
 perkalian_dot = np.dot(P, Q)
-
-# 4. Perkalian Cross dari baris pertama P dan Q
 cross_product = np.cross(P[0], Q[0])
 
-# 5. Transpose
 transpose_P = P.T
 transpose_Q = Q.T
 
-# Cetak hasil
 print("Matriks P:")
 print(P)
 print("\nMatriks Q:")
